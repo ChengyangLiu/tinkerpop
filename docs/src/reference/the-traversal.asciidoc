@@ -1471,7 +1471,7 @@ link:++http://tinkerpop.apache.org/javadocs/x.y.z/core/org/apache/tinkerpop/grem
 [[max-step]]
 === Max Step
 
-The `max()`-step (*map*) operates on a stream of comparable objects and determines which is the largest object in the stream.
+The `max()`-step (*map*) operates on a stream of comparable objects and determines which is the last object according to its natural order in the stream.
 
 [gremlin-groovy,modern]
 ----
@@ -1516,7 +1516,7 @@ link:++http://tinkerpop.apache.org/javadocs/x.y.z/core/org/apache/tinkerpop/grem
 [[min-step]]
 === Min Step
 
-The `min()`-step (*map*) operates on a stream of comparable objects and determines which is the smallest object in the stream.
+The `min()`-step (*map*) operates on a stream of comparable objects and determines which is the first object according to its natural order in the stream.
 
 [gremlin-groovy,modern]
 ----
