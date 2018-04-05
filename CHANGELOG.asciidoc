@@ -20,6 +20,11 @@ limitations under the License.
 
 image::https://raw.githubusercontent.com/apache/tinkerpop/master/docs/static/images/gremlin-mozart.png[width=185]
 
+[[release-3-3-3]]
+=== TinkerPop 3.3.3 (Release Date: NOT OFFICIALLY RELEASED YET)
+
+* Deprecated `CredentialsGraph` DSL in favor of `CredentialsTraversalDsl` which uses the recommended method for Gremlin DSL development.
+
 [[release-3-3-2]]
 === TinkerPop 3.3.2 (Release Date: April 2, 2018)
 
