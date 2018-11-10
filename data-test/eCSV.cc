@@ -35,12 +35,12 @@ int main(int argc, char **argv) {
 	string line;
   const string weight = "weight", timestamp = "timestamp";
   int count = 0;
-  fout << ":START_ID(Actor-ID),weight:int,timestamp,:END_ID(Movie-ID),:TYPE" << endl;
+  fout << ":START_ID,weight:int,timestamp:string,:END_ID,:TYPE" << endl;
 	while(getline(fin, line)){
 		stringstream ss(line);
     ss >> src >> dst >> content;
-    fout << src << "," << getValue(content, weight) << ",\"" << getValue(content, timestamp) << "\","
-    << dst << "," << "EDGE" << endl;
+    fout << src << "," << getValue(content, weight) << "," << getValue(content, timestamp) << ","
+    << dst << ",EDGE" <<endl;
     if (++count % 100000 == 0) {
       cout << count << endl;
     }

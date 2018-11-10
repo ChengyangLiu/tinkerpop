@@ -34,11 +34,11 @@ int main(int argc, char **argv) {
   string id, content;
 	string line;
   const string name = "name", age = "age", phone = "phone", weight = "weight";
-  fout << "vertexId:ID,name,age:int,phone,weight:int,:LABEL" << endl;
+  fout << ":ID,name:string,age:int,phone:string,weight:int" << endl;
 	while(getline(fin, line)){
 		stringstream ss(line);
     ss >> id >> content;
-    fout << id << "," << "\"" << getValue(content, name) << "\"," << getValue(content, age)
-    << "," << "\"" << getValue(content, phone) << "\"," << getValue(content, weight) << "," << "VERTEX" << endl;
+    fout << id << "," << getValue(content, name) << "," << getValue(content, age)
+    << "," << getValue(content, phone) << "," << getValue(content, weight) << endl;
 	}
 }
